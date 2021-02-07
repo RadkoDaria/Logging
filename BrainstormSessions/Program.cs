@@ -16,6 +16,14 @@ namespace BrainstormSessions
 
             log4net.Config.XmlConfigurator.Configure(log4netRepository, new FileInfo("log4net.config"));
 
+           
+            Logger.Log.Info("Hello logging world!");
+            Logger.Log.Warn("Warn!");
+            Logger.Log.Error("Error");
+            //log.Error("Error!");
+            //log.Warn("Warn!");
+
+
             CreateHostBuilder(args).Build().Run();
         }
 
